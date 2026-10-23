@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #08080a;
+    color: #f3f4f6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom sleek horizontal and vertical scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 15, 20, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+/* Hide scrollbar for carousel while preserving smooth horizontal scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

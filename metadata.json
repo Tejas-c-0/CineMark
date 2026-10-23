@@ -1,0 +1,6 @@
+{
+  "name": "CineMark — Indian Cinema Markov Recommendation Lab",
+  "description": "A cinematic Indian movie discovery platform and research lab powered by first-order Markov Chain transition probability modeling.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
